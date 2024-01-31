@@ -2,7 +2,7 @@
 
 * Студент: [Павел Покаместов](https://up.htmlacademy.ru/htmlcss/39/user/1227049).
 * Наставник: [Олег Зайцев](https://htmlacademy.ru/profile/ozi).
-
+* Сайт: [Мой проект Седона](https://pavel-pokamestov.github.io/1227049-sedona-39/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
