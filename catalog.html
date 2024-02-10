@@ -5,13 +5,16 @@
     <title>Каталог</title>
   </head>
 
+  <body>
+
   <header class="page-header">
-    <nav class="navigation">
-      <a class="logo" href="index.html">
-        <img src="#" alt="Логотип города Седона">
-      </a>
+
+    <a class="logo" href="index.html" aria-current="page">
+      <img src="images/logo.svg" width="140" height="70" alt="Логотип города Седона">
+    </a>
 
       <!-- Главная навигация -->
+      <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-link" href="index.html">Главная</a>
@@ -117,6 +120,7 @@
               </ul>
           </fieldset>
 
+          <!-- диапазон цен-->
           <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <button class="range-toggle toggle-min" type="button">
@@ -152,6 +156,7 @@
           <button class="visually-hidden" type="submit">Показать</button>
       </form>
 
+    <!-- тип отображения-->
       <ul class="view">
           <li class="view-list">
               <a class="button view-item">
@@ -271,7 +276,7 @@
         <p class="subscribe-email">
           <label for="subscribe-mail">Ваш e-mail</label>
           <input class="field" type="email" id="subscribe-mail" name="subscribe-mail" placeholder="Ваш e-mail" required>
-          <button class="email-button button" type="submit"> Подписаться</button>
+          <button class="email-button button" type="submit">Подписаться</button>
         </p>
       </form>
     </section>
@@ -309,4 +314,5 @@
     </section>
   </footer>
 
+  </body>
   </html>
