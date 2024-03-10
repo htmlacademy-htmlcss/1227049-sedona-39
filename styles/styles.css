@@ -53,6 +53,7 @@ body {
 .button {
   display: inline-block;
   font-family: inherit;
+  box-sizing: border-box;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -94,7 +95,6 @@ body {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  /*width: 507px;*/
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -185,7 +185,6 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  width: 620px;
   padding-top: 69px;
   padding-right: 290px;
   padding-bottom: 25px;
@@ -434,8 +433,16 @@ body {
 
 .social-list {
   display: flex;
-  width: 142px;
+  flex-wrap: wrap;
   list-style-type: none;
+}
+
+.social-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
 }
 
 .contacts {
@@ -476,7 +483,26 @@ body {
 }
 
 .breadcrumbs-list {
+  display: flex;
+  height: 21px;
   list-style-type: none;
+  text-align: center;
+}
+
+.breadcrumbs-home {
+  height: 12px;
+  width: 12px;
+  background-image: url("../images/catalog/home.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.breadcrumbs-corner {
+  height: 12px;
+  width: 12px;
+  background-image: url("../images/catalog/home.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .breadcrumbs-title {
@@ -546,11 +572,14 @@ body {
 
 .view {
   display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .sorting-type {
   font-size: 18px;
   line-height: 21px;
+
 }
 
 /* каталог гостиниц */
