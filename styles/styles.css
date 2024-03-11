@@ -482,6 +482,11 @@ body {
   line-height: 78px;
 }
 
+.breadcrumbs {
+  display: flex;
+  text-align: center;
+}
+
 .breadcrumbs-list {
   display: flex;
   height: 21px;
@@ -492,15 +497,20 @@ body {
 .breadcrumbs-home {
   height: 12px;
   width: 12px;
+  margin-top: 3px;
+  margin-right: 10px;
   background-image: url("../images/catalog/home.svg");
   background-repeat: no-repeat;
   background-position: center;
+
 }
 
 .breadcrumbs-corner {
   height: 12px;
   width: 12px;
-  background-image: url("../images/catalog/home.svg");
+  margin-top: 3px;
+  margin-right: 10px;
+  background-image: url("../images/catalog/corner.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
