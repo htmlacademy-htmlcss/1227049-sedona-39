@@ -14,7 +14,7 @@
   font-display: swap;
 }
 
-/* базовые настройки */
+/* --- базовые настройки --- */
 *,
 *::before,
 *::after {
@@ -71,7 +71,12 @@ body {
   background-color: #ffffff;
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.12);
 }
+
+
+/* Главная страница */
+
 
 /* header */
 
@@ -131,6 +136,7 @@ body {
 }
 
 .icon-button-favor {
+  position: relative;
   display: block;
   min-width: 20px;
   min-height: 20px;
@@ -141,13 +147,20 @@ body {
 }
 
 .icon-counter {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: -10px;
+  right: 3px;
   font-size: 11px;
   line-height: 10px;
   color: #ffffff;
   background-color: #7db54f;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  text-align: top;
   text-decoration: none;
+  align-items: center;
 }
 
 .navigation-button {
