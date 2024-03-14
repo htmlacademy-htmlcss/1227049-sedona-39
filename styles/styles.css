@@ -106,20 +106,28 @@ body {
   align-items: center;
 }
 
-.navigation-user {
+.navigation-main {
   display: flex;
   flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 5px;
+  margin-left: 20px;
+}
+
+.navigation-user {
+  display: flex;
+  flex-wrap: nowrap;
   margin-left: auto;
 }
 
 .navigation-link {
-
   display: block;
   padding: 20px 16px;
+  text-align: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  text-align: center;
+  color: #000000;
   text-decoration: none;
 }
 .navigation-icon {
@@ -333,7 +341,7 @@ body {
   background-size: 75px 72px;
   background-image: url("../images/main/house.svg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center 80px;
   padding: 81px 85px;
 }
 
@@ -342,16 +350,15 @@ body {
   background-size: 75px 72px;
   background-image: url("../images/main/food.svg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center 80px;
   padding: 81px 85px;
 }
 
 .features-souvenir {
-
   background-size: 75px 72px;
   background-image: url("../images/main/souvenir.svg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center 80px;
   padding: 81px 85px;
 }
 
@@ -470,7 +477,7 @@ body {
 }
 
 .logo-developer {
-  width: 115px;
+  min-width: 115px;
 }
 
 /* вторая страница*/
