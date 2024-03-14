@@ -574,7 +574,7 @@ body {
 }
 
 .reset {
-  background-color: #82b3d3;
+  background-color: transparent;
 }
 
 
@@ -616,10 +616,11 @@ body {
 
 .hotel-list {
   display: grid;
-  grid-template-columns: repeat(3, 340px);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-bottom: 40px;
   list-style-type: none;
+  padding: 0 70px;
 }
 
 .hotel-card {
@@ -688,22 +689,30 @@ body {
   display: flex;
   flex-wrap: wrap;
   column-gap: 8px;
-  width: 1060px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
+  padding-top: 40px;
   list-style-type: none;
-
 }
 
 
 .pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
   color: #ffffff;
   background-color: #82b3d3;
+  min-width: 60px;
+  padding: 12px 24px;
   text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
 }
 
 .pagination-current {
   color: #000000;
   background-color: #f2f2f2;
+}
+
+.pagination-ellipsis {
+  color: #000000;
+  background-color:#ffffff;
 }
