@@ -221,7 +221,10 @@ body {
   text-align: center;
 }
 
+
+
 /* преимущества  */
+
 
 .advantages-list {
   display: flex;
@@ -232,24 +235,37 @@ body {
   list-style-type: none;
 }
 
-.advantages-item {
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  min-width: 175px;
+  padding-left: 27px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-text {
+  min-width: 230px;
+  text-align: center;
+}
+
+.advantages-item-picture{
   display: flex;
-  flex-direction: column;
+}
+
+.advantages-picture-item {
+  display: flex;
 }
 
 .advantages-wrapper {
   display: flex;
   flex-direction: column;
-}
-
-.picture1 {
-  display: flex;
+  width: 400px;
+  padding: 85px 102px;
 }
 
 .advantages-dark {
-
-  display: flex;
-  flex-direction: column;
   color: #ffffff;
   background-color: #82b3d3;
 }
@@ -258,34 +274,15 @@ body {
   width: 400px;
   color: #333333;
   background-color: #83b3d31f;
-  padding-top: 112px;
-  padding-bottom: 112px;
+  padding: 85px 112px;
 }
 
 .advantages-average {
   width: 400px;
   color: #333333;
   background-color: #83b3d333;
-  padding-top: 112px;
-  padding-bottom: 112px;
+  padding: 85px 112px;
 }
-
-.advantages-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.advantages-light .advantages-title {
-  color: #000000;
-}
-
-.advantages-average .advantages-title {
-  color: #000000;
-}
-
 
 
 /* приглашение  */
