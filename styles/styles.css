@@ -250,7 +250,7 @@ body {
   text-align: center;
 }
 
-.advantages-item-picture{
+.advantages-item-picture {
   display: flex;
 }
 
@@ -261,8 +261,8 @@ body {
 .advantages-wrapper {
   display: flex;
   flex-direction: column;
-  width: 400px;
-  padding: 85px 102px;
+  text-align: center;
+  margin: 80px 85px;
 }
 
 .advantages-dark {
@@ -377,6 +377,7 @@ body {
 
 .search {
   text-align: center;
+  margin-bottom: 96px;
 }
 
 .search-title {
@@ -408,13 +409,14 @@ body {
 
 /* подписка   */
 .subscribe {
+  margin: 0;
+  padding: 0;
   background-color: #44777d;
   background: url("../images/main/subscribe.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #ffffff;
   text-align: center;
-  margin-top: 96px;
 }
 
 .subscribe-catalog {
@@ -426,26 +428,47 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  padding-top: 96px;
+  padding-bottom: 20px;
   text-transform: uppercase;
 }
 
 .subscribe-description {
   font-size: 22px;
   line-height: 26px;
+  min-width: 475px;
+  padding-bottom: 54px;
+  text-align: center;
+}
+
+
+.subscribe-email {
+  display: flex;
+  padding-left: 258px;
+  width: 684px;
+  align-items: center;
+}
+
+.field {
+  padding: 14px 20px;
+  line-height: 24px;
+  width: 452px;
 }
 
 .email-button {
   font-size: 20px;
   line-height: 36px;
   background-color: #82b3d3;
+  min-width: 232px;
 }
 
 /* footer  */
 
 .page-footer {
   display: flex;
-  width: 1060px;
   justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 .social-list {
@@ -475,6 +498,7 @@ body {
 
 .logo-developer {
   min-width: 115px;
+  margin-right: 70px;
 }
 
 /* вторая страница*/
