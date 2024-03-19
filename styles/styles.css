@@ -663,26 +663,20 @@ body {
 
 .breadcrumbs-list {
   display: flex;
-  height: 21px;
+  gap: 10px;
   list-style-type: none;
   text-align: center;
 }
 
 .breadcrumbs-home {
-  height: 12px;
   width: 12px;
-  margin-top: 3px;
-  margin-right: 10px;
   background-image: url("../images/catalog/home.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .breadcrumbs-corner {
-  height: 12px;
   width: 12px;
-  margin-top: 3px;
-  margin-right: 10px;
   background-image: url("../images/catalog/corner.svg");
   background-repeat: no-repeat;
   background-position: center;
