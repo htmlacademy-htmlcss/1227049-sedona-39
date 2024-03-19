@@ -122,6 +122,7 @@ body {
 }
 
 .navigation-link {
+  position: relative;
   display: block;
   padding: 20px 12px;
   text-align: center;
@@ -132,19 +133,16 @@ body {
   text-decoration: none;
 }
 
-
-.navigation-item-active::after {
+.navigation-link-active::after {
   content: "";
   position: absolute;
-  width: 68px;
+  width: calc(100% - 24px) ;
   height: 2px;
-  border: 2px solid rgba(117, 98, 87, 1);
-  margin: -2px 13px;
+  background-color: rgba(117, 98, 87, 1);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
-
-
-
-
 
 .navigation-icon {
   fill: #000000;
@@ -237,8 +235,6 @@ body {
   text-align: center;
 }
 
-
-
 /* преимущества  */
 
 .advantages {
@@ -258,6 +254,7 @@ body {
 }
 
 .advantages-title {
+  position: relative;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -274,8 +271,9 @@ body {
   width: 60px;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.3);
-  margin-top: 57px;
-  margin-left: -85px;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .advantages-text {
@@ -289,9 +287,10 @@ body {
   align-items: center;
 }
 
-.advantages-picture-item {
-  display: flex;
+.advantages-item-picture .advantages-title::after {
+  background-color: rgba(255, 255, 255, 0.3);
 }
+
 
 .advantages-wrapper {
   display: flex;
@@ -406,6 +405,7 @@ body {
   padding-top: 102px;
   text-align: center;
   text-transform: uppercase;
+  word-wrap: break-word;
 }
 
 .features-text {
@@ -502,6 +502,7 @@ body {
   min-width: 453px;
   border: none;
   border-radius: 4px 0 0 4px;
+  background-color: #f2f2f2;
 }
 
 .email-button {
@@ -524,6 +525,7 @@ body {
 .social-list {
   display: flex;
   flex-wrap: wrap;
+  row-gap: 10px;
   margin: 0;
   padding: 0;
   margin-top: 13px;
@@ -539,12 +541,11 @@ body {
   width: 48px;
 }
 
-.address {
-  margin: auto;
+.tel-nomber {
+  margin-left: auto;
 }
 
 .contacts {
-  width: 720px;
   font-size: 40px;
   line-height: 40px;
   color: #000000;
@@ -552,22 +553,30 @@ body {
   font-style: normal;
   text-decoration: none;
   text-align: center;
-  padding-left: 236px;
+}
+
+.contacts:hover {
+  color: rgba(117, 97, 87, 1);
+}
+
+.contacts:focus {
+  color: rgba(117, 97, 87, 1);
+}
+
+.contacts:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .logo-developer {
   margin-left: auto;
-  padding-top: 4px;
+  margin-top: 4px;
 }
+
+
 
 /* вторая страница*/
 
-
 /* поиск  */
-
-/* {
-  margin-bottom: -10px;
-}*/
 
 .select {
   color: #ffffff;
