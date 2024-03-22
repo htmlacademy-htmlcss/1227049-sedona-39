@@ -71,9 +71,8 @@
           <!-- Хлебные крошки -->
           <nav class="breadcrumbs" aria-label="Хлебные крошки">
             <ul class="breadcrumbs-list">
-              <li class="breadcrumbs-item breadcrumbs-home" href="index.html" aria-label="На главную">
-                <a class="breadcrumbs-title" >
-                </a>
+              <li class="breadcrumbs-home">
+                <a class="visually-hidden breadcrumbs-home-img" href="index.html" aria-label="На главную">На главную</a>
               </li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-title" href="#" aria-current="page">Гостиницы</a>
@@ -90,19 +89,22 @@
               <ul class="filter-list infra-list">
                 <li class="filter-item infra-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="swim-pool" checked>
+                    <input class="visually-hidden infra-input" type="checkbox" name="swim-pool" checked>
+                    <span class="infra-mark"></span>
                     <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="filter-item infra-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="parking" checked>
+                    <input class="visually-hidden infra-input" type="checkbox" name="parking" checked>
+                    <span class="infra-mark"></span>
                     <span class="control-label">Парковка</span>
                   </label>
                 </li>
                 <li class="filter-item infar-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="wifi">
+                    <input class="visually-hidden infra-input" type="checkbox" name="wifi">
+                    <span class="infra-mark"></span>
                     <span class="control-label">Wi-Fi</span>
                   </label>
                 </li>
@@ -110,25 +112,28 @@
             </fieldset>
 
             <!-- выбор типа жилья -->
-            <fieldset class="filter-group">
-              <legend class="filter-title">Тип Жилья:</legend>
-              <ul class="filter-list">
-                <li class="filter-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="type_hous" checked>
-                    <span class="control-label">Гостиница</span>
+            <fieldset class="filter-group housing">
+              <legend class="filter-title housing-title">Тип Жилья:</legend>
+              <ul class="filter-list housing-list">
+                <li class="filter-item housing-item">
+                  <label class="control-housing">
+                    <input class="visually-hidden housing-input" type="radio" name="type_hous" checked>
+                    <span class="housing-mark"></span>
+                    <span class="control-label-housing">Гостиница</span>
                   </label>
                 </li>
-                <li class="filter-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="type_hous">
-                    <span class="control-label">Мотель</span>
+                <li class="filter-item housing-item">
+                  <label class="control-housing">
+                    <input class="visually-hidden housing-input" type="radio" name="type_hous">
+                    <span class="housing-mark"></span>
+                    <span class="control-label-housing">Мотель</span>
                   </label>
                 </li>
-                <li class="filter-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="type_hous">
-                    <span class="control-label">Апартаменты</span>
+                <li class="filter-item housing-item">
+                  <label class="control-housing">
+                    <input class="visually-hidden housing-input" type="radio" name="type_hous">
+                    <span class="housing-mark"></span>
+                    <span class="control-label-housing">Апартаменты</span>
                   </label>
                 </li>
               </ul>

@@ -658,6 +658,8 @@ body {
   padding-bottom: 8px;
 }
 
+/* breadcrumbs */
+
 .breadcrumbs {
   display: flex;
   text-align: center;
@@ -674,16 +676,17 @@ body {
   align-items: center;
 }
 
-.breadcrumbs-item {
+.breadcrumbs-home {
   position: relative;
 }
 
-.breadcrumbs-home {
+.breadcrumbs-home-img {
+  position: relative;
   display: block;
   padding: 8px;
   background-image: url("../images/catalog/home.svg");
   background-repeat: no-repeat;
-  /*cursor: pointer;*/
+  cursor: pointer;
 }
 
 .breadcrumbs-home::after {
@@ -707,6 +710,9 @@ body {
   text-decoration: none;
 }
 
+
+/*  Выбор по параметрам */
+
 .filter {
   display: flex;
   flex-wrap: wrap;
@@ -720,10 +726,55 @@ body {
   padding-left: 68px;
 }
 
+
+/* инфрастурктура */
+
 .infra {
   margin: 0;
   padding: 0;
 }
+
+.infra-list {
+  width: 150px;
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 26px;
+}
+
+.infra-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.infra:hover .infra-mark {
+  opacity: 0.6;;
+}
+
+.infra:focus .infra-mark {
+  outline: 3px solid #83b3d3;
+}
+
+.infra:active .infra-mark {
+  opacity: 0.3;
+}
+
+.infra-input[type="checkbox"]:checked + .infra-mark,
+.infra-input[type="checkbox"]:checked + .infra-mark{
+  background-image: url("../images/catalog/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 .filter-title {
   font-weight: 700;
@@ -738,28 +789,81 @@ body {
   flex-direction: column;
   gap: 16px;
   padding: 0;
-  margin-left: 10px;
   list-style-type: none;
 }
 
 .control-label {
   font-size: 18px;
   line-height: 23px;
+  padding-left: 10px;
+  cursor: pointer;
 }
 
-.filter-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
+/* выбор типа жилья */
+
+.housing {
+  margin: 0;
+  padding: 0;
+  padding-left: 69px;
 }
 
+.housing-list {
+  width: 151px;
+}
+
+.housing-item {
+  position: relative;
+  padding-left: 36px;
+}
+
+.housing-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+
+.housing:hover .housing-mark {
+  opacity: 0.6;
+}
+
+.housing:focus .housing-mark {
+  outline: 3px solid #83b3d3;
+}
+
+.housing:active .housing-mark {
+  opacity: 0.3;
+}
+
+.housing-input[type="radio"]:checked + .housing-mark::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3f5e72;
+  border-radius: 50%;
+}
+
+.control-label-housing {
+  font-size: 18px;
+  line-height: 23px;
+  cursor: pointer;
+}
 
 /* диапазон цен  */
 
 .filter-toggle-group {
   margin: 0;
   padding: 0;
-  margin-left: 151px;
+  margin-left: 136px;
   border: none;
 }
 
@@ -777,6 +881,10 @@ body {
   margin-bottom: 44px;
 }
 
+.filter-toggle-label {
+  position: relative;
+}
+
 
 .catalog-filter-input {
   font-weight: 700;
@@ -785,8 +893,8 @@ body {
   text-align: left;
   background-color: #f2f2f2;
   border: none;
-  width: 120px;
-  padding: 12px 20px;
+  width: 146px;
+  padding: 13px 22px;
   appearance: textfield;
 }
 
@@ -797,9 +905,13 @@ body {
 }
 
 .input-text {
+  position: absolute;
+  font-size: 18px;
+  line-height: 24px;
   margin: 0;
-  background-color: #f2f2f2;
-  padding: 12px 0;
+  left: 107px;
+  top: 13px;
+  color: rgba(0, 0, 0, 0.25);
 }
 
 .range-scale {
@@ -843,7 +955,7 @@ body {
   margin: 0;
   padding: 0;
   margin-top: 56px;
-  margin-left: 70px;
+  margin-left: auto;
 }
 
 .apply {
@@ -889,11 +1001,12 @@ body {
 
 .sorting-type {
   position: relative;
-  margin-left: auto;
   font-size: 18px;
   line-height: 21px;
+  color: rgba(51, 51, 51, 1);
   margin: 0;
   padding: 0;
+  margin-left: auto;
 }
 
 .sorting-type::after {
@@ -905,6 +1018,7 @@ body {
   right: 20px;
   background-image: url("../images/catalog/vector.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .select-control {
@@ -920,6 +1034,7 @@ body {
   outline: 2px solid #e5e5e5;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 
 .select-control:hover,
