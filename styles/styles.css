@@ -754,7 +754,7 @@ body {
 }
 
 
-
+/* диапазон цен  */
 
 .filter-toggle-group {
   margin: 0;
@@ -834,9 +834,7 @@ body {
   right: 0;
 }
 
-
-
-
+/* отдельные кнопки */
 
 .filter-button {
   display: flex;
@@ -869,7 +867,7 @@ body {
 }
 
 
-/* результат*/
+/* результат поиска*/
 
 .search-list {
   display: flex;
@@ -880,21 +878,33 @@ body {
 }
 
 .search-result-hotel {
-  width: 338px;
-}
-
-.search-result-hotel {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  width: 338px;
   color: #000000;
   background-color: #ffffff;
   text-transform: uppercase;
 }
 
 .sorting-type {
+  position: relative;
+  margin-left: auto;
+  font-size: 18px;
+  line-height: 21px;
   margin: 0;
   padding: 0;
+}
+
+.sorting-type::after {
+  content:"";
+  position: absolute;
+  width: 12px;
+  height: 8px;
+  top: 22px;
+  right: 20px;
+  background-image: url("../images/catalog/vector.svg");
+  background-repeat: no-repeat;
 }
 
 .select-control {
@@ -917,26 +927,7 @@ body {
   outline: 2px solid #68a2ca;
 }
 
-.sorting-type {
-  position: relative;
-  margin-left: auto;
-}
-
-.sorting-type::after {
-  content:"";
-  position: absolute;
-  width: 12px;
-  height: 8px;
-  top: 22px;
-  right: 20px;
-  background-image: url("../images/catalog/vector.svg");
-  background-repeat: no-repeat;
-}
-
-.sorting-type {
-  font-size: 18px;
-  line-height: 21px;
-}
+/* тип отображения  */
 
 .view {
   display: flex;
