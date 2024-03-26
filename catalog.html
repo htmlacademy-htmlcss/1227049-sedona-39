@@ -6,6 +6,7 @@
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <body>
@@ -25,8 +26,8 @@
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
-            <li class="navigation-item navigation-item-active">
-              <a class="navigation-link" href="#" aria-current="page">Гостиницы</a>
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-active" href="#" aria-current="page">Гостиницы</a>
             </li>
           </ul>
 
@@ -35,10 +36,9 @@
             <li class="navigation-item">
               <a class="icon-button-search" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="20" height="20"
-                  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  viewBox="0 0 20 20" fill="#000" xmlns="http://www.w3.org/2000/svg">
                   <path
-                    d="m19.5 18.008-3.7-3.68c1-1.292 1.7-2.983 1.7-4.872 0-4.376-3.6-7.956-8-7.956s-8 3.68-8 8.055c0 4.376 3.6 7.956 8 7.956 1.8 0 3.5-.597 4.9-1.69l3.7 3.679 1.4-1.492Zm-10-2.486c-3.3 0-6-2.685-6-5.967 0-3.282 2.7-5.967 6-5.967s6 2.685 6 5.967c0 3.282-2.7 5.967-6 5.967Z"
-                    fill="#000" />
+                    d="m19.5 18.008-3.7-3.68c1-1.292 1.7-2.983 1.7-4.872 0-4.376-3.6-7.956-8-7.956s-8 3.68-8 8.055c0 4.376 3.6 7.956 8 7.956 1.8 0 3.5-.597 4.9-1.69l3.7 3.679 1.4-1.492Zm-10-2.486c-3.3 0-6-2.685-6-5.967 0-3.282 2.7-5.967 6-5.967s6 2.685 6 5.967c0 3.282-2.7 5.967-6 5.967Z" />
                 </svg>
                 <span class="visually-hidden">Поиск</span>
               </a>
@@ -46,10 +46,9 @@
             <li class="navigation-item">
               <a class="icon-button-favor" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="20" height="20"
-                  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  viewBox="0 0 20 20" fill="#000" xmlns="http://www.w3.org/2000/svg">
                   <path
-                    d="M9.9 19c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9C1.4 9.8 1 8.6 1 7.4 1 4.4 3.4 2 6.5 2 7.8 2 9 2.5 10 3.3c1-.8 2.3-1.3 3.5-1.3 3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"
-                    fill="#000" />
+                    d="M9.9 19c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9C1.4 9.8 1 8.6 1 7.4 1 4.4 3.4 2 6.5 2 7.8 2 9 2.5 10 3.3c1-.8 2.3-1.3 3.5-1.3 3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
                 </svg>
                 <span class="visually-hidden">Избранное</span>
                 <span class="icon-counter">12</span>
@@ -350,6 +349,21 @@
         </section>
 
         <!-- Подписаться -->
+
+        <section class="subscribe subscribe-no-bg">
+          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+          <p class="subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="subscribe-email">
+              <label class="visually-hidden" for="subscribe-mail">Ваш e-mail</label>
+              <input class="field" type="email" id="subscribe-mail" name="subscribe-mail" placeholder="Ваш e-mail"
+                required>
+              <button class="email-button button" type="submit"> Подписаться</button>
+            </p>
+          </form>
+        </section>
+
+        <!--
         <section class="subscribe-catalog">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
 
@@ -363,6 +377,7 @@
             </p>
           </form>
         </section>
+        -->
 
       </main>
 

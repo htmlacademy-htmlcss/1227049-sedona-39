@@ -6,6 +6,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <body>
@@ -216,44 +217,99 @@
 
     </div>
 
-
-
+    <!-- модальное окно -->
 
     <div class="modal-container modal-container-close">
+      <div class="modal modal-outside">
 
-      <!-- кнопка закрыть -->
-      <button class="modal-close-button" type="button">
-        <span class="visually-hidden">Закрыть окно</span>
-      </button>
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть окно.</span>
+        </button>
 
-      <!-- основное модальное окно -->
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в седоне</h2>
 
-      <h2 class="modal-title">Поиск гостиницы в седоне</h2>
+          <form class="date-table" action="https://echo.htmlacademy.ru/" method="get">
 
-      <form class="modal-date" action="https://echo.htmlacademy.ru/" method="get">
+            <div class="modal-date">
+              <label class="field-name" for="date-in">Дата Заезда: </label>
+              <input class="calendar" type="text" id="date-in" name="date-in" placeholder="Укажите дату"
+                value="27 апреля 2020" required>
+              <p class="date-info warning">Мы не можем отправить вас в прошлое.</p>
+            </div>
 
-        <!-- даты заездов-->
-        <div class="modal-date-wrapper">
-          <label class="field-name" for="date-in">Дата Заезда: </label>
-          <input class="calendar" type="text" id="date-in" name="date-in" placeholder="Укажите дату" value="27 апреля 2020" required>
-          <p class="info warning">Мы не можем отправить вас в прошлое.</p>
-        </div>
+            <div class="modal-date">
+              <label class="field-name" for="date-out">Дата Выезда:</label>
+              <input class="calendar" type="text" id="date-out" name="date-out" placeholder="Укажите дату"
+                value="1 сентября 2023" required>
+              <p class="date-info">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
 
-        <div class="modal-date-wrapper">
-          <label class="field-name" for="date-out">Дата Выезда:</label>
-          <input class="calendar" type="text" id="date-out" name="date-out" placeholder="Укажите дату" value="1 сентября 2023" required>
-          <p class="info ">На эти даты есть свободные номера. Пока есть.</p>
-        </div>
+            <div class="number-wrapper">
+              <div class="guests">
+                <label class="field-name" for="adult-add">Взрослые:</label>
+                <div class="button-wrapper">
+                  <button class="add-button" type="button">
+                    <span class="visually-hidden">Уменьшить количество взрослых</span>
+                    <svg aria-hidden="true" focusable="false" width="20" height="20" fill="#756157"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9v2h14V9H3Z" fill-opacity=".3" />
+                    </svg>
+                  </button>
 
+                  <input class="people-number" type="number" id="adult-add" name="adult" value="2" required>
 
-        <!-- Кнопка найти внизу -->
-        <button class="search-button" type="submit">Найти</button>
+                  <button class="add-button" type="button">
+                    <span class="visually-hidden">Увеличить количество взрослых</span>
+                    <svg aria-hidden="true" focusable="false" width="20" height="20" fill="#756157"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill-opacity=".3" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
 
-      </form>
+              <div class="guests">
+
+                <span class="form-label">
+                  <label class="field-name" for="children-add">Дети:</label>
+                  <span class="tooltip">
+                    <button class="button-tooltip" type="button" aria-labelledby="tooltip-label-date">
+                      <span class="visually-hidden">Посмотреть подсказку</span>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые
+                      будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+
+                <div class="button-wrapper">
+                  <button class="add-button" type="button">
+                    <span class="visually-hidden">Уменьшить количество детей</span>
+                    <svg aria-hidden="true" focusable="false" width="20" height="20" fill="#756157"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9v2h14V9H3Z" fill-opacity=".3" />
+                    </svg>
+                  </button>
+
+                  <input class="people-number" type="number" id="children-add" name="children" value="2">
+
+                  <button class="add-button" type="button">
+                    <span class="visually-hidden">Увеличить количество детей</span>
+                    <svg aria-hidden="true" focusable="false" width="20" height="20" fill="#756157"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill-opacity=".3" />
+                    </svg>
+                  </button>
+
+                </div>
+              </div>
+            </div>
+            <button class="search-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
-
-
-
+    </div>
 
 
   </body>
