@@ -218,12 +218,17 @@ body {
 
 .navigation-button:hover,
 .navigation-button:focus {
-  background: rgba(97, 80, 72, 1);
+  background-color: rgba(97, 80, 72, 1);
 }
 
 .navigation-button:active {
-  background: rgba(117, 97, 87, 1);
+  background-color: rgba(117, 97, 87, 1);
   color: rgba(255, 255, 255, 0.3);
+}
+
+.navigation-button:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 /* main */
@@ -385,6 +390,7 @@ body {
 
 .features-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -486,12 +492,17 @@ body {
 
 .search-button:hover,
 .search-button:focus {
-  background: rgba(97, 80, 72, 1);
+  background-color: rgba(97, 80, 72, 1);
 }
 
 .search-button:active {
-  background: rgba(117, 97, 87, 1);
+  background-color: rgba(117, 97, 87, 1);
   color: rgba(255, 255, 255, 0.3);
+}
+
+.search-button:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 
@@ -554,6 +565,7 @@ body {
   background-color: #f2f2f2;
 }
 
+
 .email-button {
   font-size: 20px;
   line-height: 36px;
@@ -566,12 +578,17 @@ body {
 
 .email-button:hover,
 .email-button:focus {
-  background: rgba(104, 162, 202, 1);
+  background-color: rgba(104, 162, 202, 1);
 }
 
 .email-button:active {
   background-color: rgba(130, 179, 211, 1);
   color: rgba(255, 255, 255, 0.3);
+}
+
+.email-button:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 
@@ -653,6 +670,7 @@ body {
 /* поиск  */
 
 .select {
+  background-color: #44777d;
   color: #ffffff;
   background-image: url("../images/catalog/catalog-background.jpg");
   background-size: cover;
@@ -989,6 +1007,15 @@ outline: 2px solid #83b3d3;
   right: -3px;
 }
 
+.toggle-min:hover,
+.toggle-max:hover {
+  background: #756157;
+}
+
+.toggle-min:active,
+.toggle-max:active {
+  background: #efc5b1;
+}
 
 /* отдельные кнопки */
 
@@ -1010,6 +1037,15 @@ outline: 2px solid #83b3d3;
   text-transform: uppercase;
   padding: 8px 50px;
   border-radius: 4px;
+}
+.apply:hover,
+.apply:focus {
+  background-color: #68a2ca;
+}
+
+.apply:active {
+  background-color: #68a2ca;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .reset {
@@ -1126,6 +1162,12 @@ outline: 2px solid #83b3d3;
   border-radius: 4px;
 }
 
+.current-view {
+  outline: 2px solid #000000;
+  border-radius: 4px;
+}
+
+
 .view-item:hover,
 .view-item:active {
   outline: 2px solid #000000;
@@ -1134,6 +1176,7 @@ outline: 2px solid #83b3d3;
 .view-item:focus {
   outline: 2px solid #68a2ca;
 }
+
 
 
 /* каталог гостиниц */
@@ -1218,7 +1261,9 @@ outline: 2px solid #83b3d3;
 }
 
 .hotel-card-title-favour {
+  font-weight: 700;
   font-size: 16px;
+  line-height: 20px;
   font-family: inherit;
   color: #ffffff;
   background-color: #82b3d3;
@@ -1242,7 +1287,9 @@ outline: 2px solid #83b3d3;
 }
 
 .hotel-card-title-favour-now {
+  font-weight: 700;
   font-size: 16px;
+  line-height: 20px;
   font-family: inherit;
   color: #ffffff;
   background-color: #7db54f;
@@ -1266,23 +1313,37 @@ outline: 2px solid #83b3d3;
 }
 
 .hotel-card-stars {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
+  margin: 0;
+  background-image: url("../images/catalog/star.svg");
+  background-repeat: space no-repeat;
+  background-size: 18px 18px;
+  background-position: center;
+  padding-top: 15px;
 }
 
-.stars-list{
-  display: flex;
-  gap: 6px;
-  padding-left: 22px;
-  list-style-image: url("../images/catalog/star.svg");
-  width: 140px;
-  list-style-type: none;
+.stars-text {
+  margin: 0;
+  padding-top: 15px;
 }
 
-.stars-item{
-  width: 18px;
-  height: 18px;
+.star-one {
+  width: 35px;
+}
+
+.star-two {
+  width: 42px;
+}
+
+.star-three {
+  width: 66px;
+}
+
+.star-four {
+  width: 89px;
+}
+
+.star-five {
+  width: 105px;
 }
 
 .hotel-card-rating {
@@ -1427,7 +1488,7 @@ outline: 2px solid #83b3d3;
   width: 137px;
 }
 
-.search-button {
+.modal-search-button {
   font-family: inherit;
   user-select: none;
   font-weight: 700;
@@ -1445,12 +1506,12 @@ outline: 2px solid #83b3d3;
   cursor: pointer;
 }
 
-.search-button:hover,
-.search-button:focus {
+.modal-search-button:hover,
+.modal-search-button:focus {
   background-color: #68a2ca;
 }
 
-.search-button:active {
+.modal-search-button:active {
   background-color: #68a2ca;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -1473,10 +1534,15 @@ outline: 2px solid #83b3d3;
   background-size: 20px 20px;
 }
 
-.calendar:hover,
-.calendar:focus {
+.calendar:hover {
   background-color: #e6e6e6;
 }
+
+.calendar:focus {
+  border: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+
 
 .modal-date {
   display: grid;
@@ -1557,7 +1623,6 @@ outline: 2px solid #83b3d3;
   justify-content: space-between;
   margin-bottom: 48px;
 }
-
 
 .guests {
   display: flex;
