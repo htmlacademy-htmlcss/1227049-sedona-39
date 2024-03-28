@@ -146,6 +146,9 @@ body {
   color: rgba(0, 0, 0, 0.5);
 }
 
+.navigation-link:disabled {
+  opacity: 0.3;
+}
 
 .navigation-link-active::after {
   content: "";
@@ -162,7 +165,6 @@ body {
   fill: #000000;
 }
 
-
 .icon-button-search {
   display: block;
   min-width: 20px;
@@ -174,6 +176,10 @@ body {
 .icon-button-search:hover .navigation-icon,
 .icon-button-search:focus .navigation-icon {
   fill: rgba(0, 0, 0, 0.5);
+}
+
+.icon-button-search:disabled {
+  opacity: 0.3;
 }
 
 .icon-button-favor {
@@ -189,6 +195,10 @@ body {
 .icon-button-favor:hover .navigation-icon,
 .icon-button-favor:focus .navigation-icon {
   fill: rgba(0, 0, 0, 0.5);
+}
+
+.icon-button-favor:disabled {
+  opacity: 0.3;
 }
 
 .icon-counter {
@@ -573,6 +583,9 @@ body {
   outline: 3px solid #83b3d3;
 }
 
+.field:disabled {
+  opacity: 0.3;
+}
 
 .email-button {
   font-size: 20px;
@@ -761,6 +774,10 @@ body {
   opacity: 0.3;
 }
 
+.breadcrumbs-title:disabled,
+.breadcrumbs-home-img:disabled {
+  opacity: 0.3;
+}
 
 /*  Выбор по параметрам */
 
@@ -1378,7 +1395,6 @@ outline: 2px solid #83b3d3;
 .hotel-card-title-favour-now:hover,
 .hotel-card-title-favour-now:focus {
   background-color: #6c9e42;
-
 }
 
 .hotel-card-title-favour-now:active {
@@ -1694,6 +1710,12 @@ outline: 2px solid #83b3d3;
 
 .less:active,
 .more:active {
+  fill: #000000;
+  fill-opacity: 0.2;
+}
+
+.less:disabled,
+.more:disabled {
   fill: #000000;
   fill-opacity: 0.2;
 }
