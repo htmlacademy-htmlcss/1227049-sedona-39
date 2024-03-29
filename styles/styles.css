@@ -821,6 +821,10 @@ body {
 outline: 2px solid #83b3d3;
 }
 
+.infra-input:disabled + .control-label {
+  opacity: 0.3;
+}
+
 .filter-title {
   font-weight: 700;
   font-size: 20px;
@@ -949,6 +953,10 @@ outline: 2px solid #83b3d3;
 
 .housing-input[type="radio"]:focus + .control-label-housing::before {
   outline: 2px solid #83b3d3;
+}
+
+.housing-input[type="radio"]:disabled + .control-label-housing {
+  opacity: 0.3;
 }
 
 
